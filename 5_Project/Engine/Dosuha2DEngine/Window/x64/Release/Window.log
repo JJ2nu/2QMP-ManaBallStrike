@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  Class.cpp
+  WinAPIException.cpp
+  Handle.cpp
+  System.cpp
+  Functions.cpp
+  Window.vcxproj -> D:\2QMP\5_Project\Engine\Dosuha2DEngine\x64\Release\Window.lib

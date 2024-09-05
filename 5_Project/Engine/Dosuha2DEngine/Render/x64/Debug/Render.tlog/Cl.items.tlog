@@ -1,0 +1,11 @@
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Exception\ResultException\ResultException.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\ResultException.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Interfaces\ILoader\ILoader.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\ILoader.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Interfaces\IRenderer\IRenderer.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\IRenderer.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Interfaces\IShader\IShader.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\IShader.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Interfaces\ISystem\ISystem.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\ISystem.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Loader\Loader.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\Loader.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\pch.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\pch.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Renderer\Renderer.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\Renderer.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Shader\Shader.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\Shader.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\System\System.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\System.obj
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Utilities\Functions\Functions.cpp;D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\x64\Debug\Functions.obj

@@ -1,0 +1,19 @@
+﻿  pch.cpp
+  ResultException.cpp
+  ILoader.cpp
+  IRenderer.cpp
+  IShader.cpp
+  ISystem.cpp
+  Loader.cpp
+  Renderer.cpp
+  Shader.cpp
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Shader\Shader.cpp(381,11): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Shader\Shader.cpp(383,13): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Shader\Shader.cpp(388,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Shader\Shader.cpp(489,32): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\2QMP\5_Project\Engine\Dosuha2DEngine\Render\Shader\Shader.cpp(523,25): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  System.cpp
+  Functions.cpp
+  코드를 생성하고 있습니다...
+Windowscodecs.lib(WindowsCodecs.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR이(가) D2d1.lib(d2d1.dll)에 이미 정의되어 있습니다. 초 정의가 무시됩니다.
+  Render.vcxproj -> D:\2QMP\5_Project\Engine\Dosuha2DEngine\x64\Debug\Render.lib

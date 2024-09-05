@@ -1,0 +1,14 @@
+13,,
+Idle,1,ch_001.csv
+DashUp,0,ch_002.csv
+DashSide,0,ch_003.csv
+DashDownSide,0,ch_004.csv
+DashUpSide,0,ch_005.csv
+DashDown,0,ch_006.csv
+Hit,0,ch_007.csv
+AttackSide,0,ch_008.csv
+AttackDown,0,ch_009.csv
+AttackUp,0,ch_010.csv
+Death,0,ch_011.csv
+MoveSide,1,ch_012.csv
+MoveUp,1,ch_013.csv

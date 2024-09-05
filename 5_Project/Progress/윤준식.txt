@@ -1,0 +1,34 @@
+8/5
+과제 1. World -> 구현 완
+과제 2. Object -> 구현 완
+과제 3. Component -> 구현 완
+과제 4. Scene -> 구현 완
+과제 5. BoxComponent -> 구현 완
+
+8/6
+과제 1. Camera -> 구현 완 (추후 카메라 렉, 줌 인 아웃, 쉐이크 등 추가 예정)
+과제 2. CameraObject -> 구현 완
+과제 3. CameraComponent -> 구현 완
+과제 4. Image Load -> IWICImagingFactory와 COMPtr 동시 사용으로 인한 에러 발생(에러 발생 원인은 ComPtr을 사용하고 있는 객체가 전역 영역에 메모리를 가진채로 Release 전에 CoUninitialize() 함수를 호출하는 것이 문제로 파악되나 더 많은 시도를 통해 자세한 원인을 분석해야 할 것 같음.)
+
+8/7
+과제 1. Bitmap Component -> 구현 완
+과제 2. Time Scale -> 구현 완
+과제 3. Camera Culling -> 구현 완
+과제 4. Animation Component -> 미완
+과제 5. Animation Event -> 미완
+과제 6. Shared Resource -> 미완
+과제 7. Resource Manager -> 구현 완
+
+8/8
+과제 1. Shared Resource -> 구현 완
+과제 2. Animation Compoenent -> 구현 완
+과제 3. Animation Event -> 미완
+과제 4. UI System -> 미완
+
+8/9
+과제 1. UI System -> 미완
+과제 2. Collision System -> 미완
+
+8/12
+과제 1. Collision System -> 완

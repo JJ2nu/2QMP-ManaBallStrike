@@ -1,0 +1,15 @@
+#pragma once
+
+#include "Shapes/Shapes.h"
+#include "Bound/BoundComponent.h"
+#include "Camera/CameraComponent.h"
+#include "Bitmap/BitmapComponent.h"
+#include "Animation/AnimationComponent.h"
+#include "Movement/MovementComponent.h"
+#include "Rigidbody/RigidbodyComponent.h"
+#include "Colliders/Colliders.h"
+#include "UI/UIComponent.h"
+#include "Lights/Lights.h"
+#include "AlphaBitmap/AlphaBitmapComponent.h"
+#include "FadeBitmap/FadeBitmapComponent.h"
+#include "HidableAnimation/HidableAnimation.h"

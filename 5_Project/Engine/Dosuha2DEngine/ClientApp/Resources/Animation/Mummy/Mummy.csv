@@ -1,0 +1,6 @@
+5,,
+Idle,1,Idle.csv
+Walk,1,Walk.csv
+Attack,0,Attack.csv
+Hurt,1,Hurt.csv
+Death,0,Death.csv

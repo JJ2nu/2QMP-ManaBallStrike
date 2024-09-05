@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{83F4E073-F5AE-4E36-9F3B-211F9EF0529E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ClientApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>.\</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>.\</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BackgroundMusic\BackgroundMusic.cpp" />
+    <ClCompile Include="Components\Effect\TrailEffect\TrailEffect.cpp" />
+    <ClCompile Include="Objects\EndingCreditScroller\EndingCreditScroller.cpp" />
+    <ClCompile Include="Objects\Background\EndingBackground.cpp" />
+    <ClCompile Include="Objects\Background\BossBackground.cpp" />
+    <ClCompile Include="Objects\CutScene\CutScene.cpp" />
+    <ClCompile Include="Objects\Enemies\Boss\BossBullet.cpp" />
+    <ClCompile Include="Worlds\CutSceneStage\CutSceneStage.cpp" />
+    <ClCompile Include="Managers\Data\DataManager.cpp" />
+    <ClCompile Include="Objects\Bombs\PoisonBomb\Poison.cpp" />
+    <ClCompile Include="Objects\Enemies\Boss\Boss.cpp" />
+    <ClCompile Include="Objects\Enemies\Explode\EnemyExplosion.cpp" />
+    <ClCompile Include="Objects\Enemies\EnemyType004\HealPack.cpp" />
+    <ClCompile Include="Objects\EnemySpawner\Spawner\Spawner.cpp" />
+    <ClCompile Include="Objects\KeyInformation\KeyInformation.cpp" />
+    <ClCompile Include="Objects\Ornament\Gate\Gate.cpp" />
+    <ClCompile Include="Objects\Background\LoadingBackground.cpp" />
+    <ClCompile Include="Objects\BombSpawner\BombSpawner.cpp" />
+    <ClCompile Include="Components\Effect\CollsionEffect\CollisionEffect.cpp" />
+    <ClCompile Include="Components\BackgroundBitmap\BackgroundBitmap.cpp" />
+    <ClCompile Include="Canvas\Main\MainCanvas.cpp" />
+    <ClCompile Include="ClientApp.cpp" />
+    <ClCompile Include="Components\DashMovement\DashMovement.cpp" />
+    <ClCompile Include="Components\Indicator\Indicator.cpp" />
+    <ClCompile Include="Components\KnockBackMovement\KnockBackMovement.cpp" />
+    <ClCompile Include="Components\Staff\Staff.cpp" />
+    <ClCompile Include="Components\TimingBar\TimingBar.cpp" />
+    <ClCompile Include="Objects\Effect\Effect.cpp" />
+    <ClCompile Include="Managers\Config\ConfigManager.cpp" />
+    <ClCompile Include="Components\EventBindAnimation\EventBindAnimation.cpp" />
+    <ClCompile Include="Objects\Background\Background.cpp" />
+    <ClCompile Include="Objects\Ball\Ball.cpp" />
+    <ClCompile Include="Objects\Bombs\Base\BombBase.cpp" />
+    <ClCompile Include="Objects\Bombs\NormalBomb\NormalBomb.cpp" />
+    <ClCompile Include="Objects\Bombs\PoisonBomb\PoisonBomb.cpp" />
+    <ClCompile Include="Objects\Enemies\EnemyType003\EnemyBullet.cpp" />
+    <ClCompile Include="Objects\Enemies\EnemyType003\EnemyType003.cpp" />
+    <ClCompile Include="Objects\Enemies\Base\EnemyBase.cpp" />
+    <ClCompile Include="Objects\Enemies\EnemyType001\EnemyType001.cpp" />
+    <ClCompile Include="Objects\Enemies\EnemyType002\EnemyType002.cpp" />
+    <ClCompile Include="Objects\Enemies\EnemyType004\EnemyType004.cpp" />
+    <ClCompile Include="Objects\Player\AutoMovePlayer.cpp" />
+    <ClCompile Include="Objects\Player\PlayerBase.cpp" />
+    <ClCompile Include="Objects\Title\Title.cpp" />
+    <ClCompile Include="Objects\Player\ControlPlayer.cpp" />
+    <ClCompile Include="Objects\Test\RigidbodyTestObject.cpp" />
+    <ClCompile Include="Objects\Test\TestObject.cpp" />
+    <ClCompile Include="Objects\Walls\Walls.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Components\Effect\SwingEffect\SwingEffect.cpp" />
+    <ClCompile Include="Objects\Pilar\PilarBase.cpp" />
+    <ClCompile Include="UI\Card\Card.cpp" />
+    <ClCompile Include="UI\GameOver\GameOver.cpp" />
+    <ClCompile Include="UI\Upgrade\Upgrade.cpp" />
+    <ClCompile Include="Managers\StageLoader\StageLoader.cpp" />
+    <ClCompile Include="Worlds\BattleStage\BattleStage.cpp" />
+    <ClCompile Include="Worlds\Stage4\Stage004.cpp" />
+    <ClCompile Include="Worlds\Stage3\Stage003.cpp" />
+    <ClCompile Include="Worlds\Stage2\Stage002.cpp" />
+    <ClCompile Include="Worlds\Stage1\Stage001.cpp" />
+    <ClCompile Include="System\System.cpp" />
+    <ClCompile Include="Objects\Ornament\Torch\Torch.cpp" />
+    <ClCompile Include="UI\HealthBar\HealthBar.cpp" />
+    <ClCompile Include="UI\HUD\HUD.cpp" />
+    <ClCompile Include="UI\ManaBallCounter\ManaBallCounter.cpp" />
+    <ClCompile Include="UI\Number\Number.cpp" />
+    <ClCompile Include="UI\Settings\Settings.cpp" />
+    <ClCompile Include="Worlds\LoadingStage\LoadingStage.cpp" />
+    <ClCompile Include="Worlds\MainStage\MainStage.cpp" />
+    <ClCompile Include="Worlds\Stage\Stage.cpp" />
+    <ClCompile Include="Worlds\Test\TestWorld.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Animation\Animation.vcxproj">
+      <Project>{9613b5f9-b96f-430b-9f03-54ef69d779df}</Project>
+      <Name>Animation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DosuhaPointer\DosuhaPointer.vcxproj">
+      <Project>{11525125-e08e-4f20-82c5-29aeb69b2516}</Project>
+      <Name>DosuhaPointer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{0cc75332-8f98-4367-960d-a8061003e79f}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exception\Exception.vcxproj">
+      <Project>{ed3546a8-a8ae-45da-9622-d2bcb3ac2487}</Project>
+      <Name>Exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Input\Input.vcxproj">
+      <Project>{2500ebc8-6247-451a-afc8-76513debd7df}</Project>
+      <Name>Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Render\Render.vcxproj">
+      <Project>{8799087d-7e9b-47ab-8365-762e005ba421}</Project>
+      <Name>Render</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Time\Time.vcxproj">
+      <Project>{1884cf54-1124-4681-840d-83a472b0130d}</Project>
+      <Name>Time</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Window\Window.vcxproj">
+      <Project>{2058c754-32d6-492d-852a-32310a2fbde7}</Project>
+      <Name>Window</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BackgroundMusic\BackgroundMusic.h" />
+    <ClInclude Include="Objects\Background\EndingBackground.h" />
+    <ClInclude Include="Objects\EndingCreditScroller\EndingCreditScroller.h" />
+    <ClInclude Include="Objects\Background\BossBackground.h" />
+    <ClInclude Include="Objects\CutScene\CutScene.h" />
+    <ClInclude Include="Objects\Enemies\Boss\BossBullet.h" />
+    <ClInclude Include="Worlds\CutSceneStage\CutSceneStage.h" />
+    <ClInclude Include="Objects\Bombs\PoisonBomb\Poison.h" />
+    <ClInclude Include="Objects\Enemies\Boss\Boss.h" />
+    <ClInclude Include="Objects\Enemies\Explode\EnemyExplosion.h" />
+    <ClInclude Include="Objects\Enemies\EnemyType004\HealPack.h" />
+    <ClInclude Include="Objects\EnemySpawner\Spawner\Spawner.h" />
+    <ClInclude Include="Objects\KeyInformation\KeyInformation.h" />
+    <ClInclude Include="Objects\Ornament\Gate\Gate.h" />
+    <ClInclude Include="Managers\Managers.h" />
+    <ClInclude Include="Components\Effect\TrailEffect\TrailEffect.h" />
+    <ClInclude Include="Managers\Data\DataManager.h" />
+    <ClInclude Include="Objects\Background\LoadingBackground.h" />
+    <ClInclude Include="Objects\EnemySpawner\EnemySpawner.h" />
+    <ClInclude Include="Objects\BombSpawner\BombSpawner.h" />
+    <ClInclude Include="Components\Effect\CollsionEffect\CollisionEffect.h" />
+    <ClInclude Include="Components\BackgroundBitmap\BackgroundBitmap.h" />
+    <ClInclude Include="Canvas\Main\MainCanvas.h" />
+    <ClInclude Include="Components\DashMovement\DashMovement.h" />
+    <ClInclude Include="Components\Indicator\Indicator.h" />
+    <ClInclude Include="Components\KnockBackMovement\KnockBackMovement.h" />
+    <ClInclude Include="Components\Staff\Staff.h" />
+    <ClInclude Include="Components\TimingBar\TimingBar.h" />
+    <ClInclude Include="Objects\Effect\Effect.h" />
+    <ClInclude Include="Managers\Config\ConfigManager.h" />
+    <ClInclude Include="Components\EventBindAnimation\EventBindAnimation.h" />
+    <ClInclude Include="Objects\Background\Background.h" />
+    <ClInclude Include="Objects\Ball\Ball.h" />
+    <ClInclude Include="Objects\Bombs\Base\BombBase.h" />
+    <ClInclude Include="Objects\Bombs\Bombs.h" />
+    <ClInclude Include="Objects\Bombs\NormalBomb\NormalBomb.h" />
+    <ClInclude Include="Objects\Bombs\PoisonBomb\PoisonBomb.h" />
+    <ClInclude Include="Objects\Enemies\EnemyType003\EnemyBullet.h" />
+    <ClInclude Include="Objects\Enemies\EnemyType003\EnemyType003.h" />
+    <ClInclude Include="Objects\Enemies\Base\EnemyBase.h" />
+    <ClInclude Include="Objects\Enemies\Enemies.h" />
+    <ClInclude Include="Objects\Enemies\EnemyType001\EnemyType001.h" />
+    <ClInclude Include="Objects\Enemies\EnemyType002\EnemyType002.h" />
+    <ClInclude Include="Objects\Enemies\EnemyType004\EnemyType004.h" />
+    <ClInclude Include="Objects\Player\AutoMovePlayer.h" />
+    <ClInclude Include="Objects\Player\PlayerBase.h" />
+    <ClInclude Include="Objects\Title\Title.h" />
+    <ClInclude Include="Objects\Player\ControlPlayer.h" />
+    <ClInclude Include="Objects\Test\RigidbodyTestObject.h" />
+    <ClInclude Include="Objects\Test\TestObject.h" />
+    <ClInclude Include="Objects\Walls\Walls.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Components\Effect\SwingEffect\SwingEffect.h" />
+    <ClInclude Include="Objects\Pilar\PilarBase.h" />
+    <ClInclude Include="UI\Card\Card.h" />
+    <ClInclude Include="UI\GameOver\GameOver.h" />
+    <ClInclude Include="UI\Upgrade\Upgrade.h" />
+    <ClInclude Include="Managers\StageLoader\StageLoader.h" />
+    <ClInclude Include="Worlds\BattleStage\BattleStage.h" />
+    <ClInclude Include="Worlds\Stage4\Stage004.h" />
+    <ClInclude Include="Worlds\Stage3\Stage003.h" />
+    <ClInclude Include="Worlds\Stage2\Stage002.h" />
+    <ClInclude Include="Worlds\Stage1\Stage001.h" />
+    <ClInclude Include="System\System.h" />
+    <ClInclude Include="Objects\Ornament\Torch\Torch.h" />
+    <ClInclude Include="UI\HealthBar\HealthBar.h" />
+    <ClInclude Include="UI\HUD\HUD.h" />
+    <ClInclude Include="UI\ManaBallCounter\ManaBallCounter.h" />
+    <ClInclude Include="UI\Number\Number.h" />
+    <ClInclude Include="UI\Settings\Settings.h" />
+    <ClInclude Include="Worlds\LoadingStage\LoadingStage.h" />
+    <ClInclude Include="Worlds\MainStage\MainStage.h" />
+    <ClInclude Include="Worlds\Stage\Stage.h" />
+    <ClInclude Include="Worlds\Test\TestWorld.h" />
+    <ClInclude Include="Worlds\Worlds.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.ini" />
+    <Content Include="Resources\Animation\Book\Book.csv" />
+    <Content Include="Resources\Animation\Book\mon_005_3_1.csv" />
+    <Content Include="Resources\Animation\DoorArrow\DoorArrow.csv" />
+    <Content Include="Resources\Animation\DoorArrow\icon_005.csv" />
+    <Content Include="Resources\Animation\door\DoorEye.csv" />
+    <Content Include="Resources\Animation\door\DoorFrame.csv" />
+    <Content Include="Resources\Animation\door\DoorShadow.csv" />
+    <Content Include="Resources\Animation\door\object_004.csv" />
+    <Content Include="Resources\Animation\door\object_004_1.csv" />
+    <Content Include="Resources\Animation\door\object_010.csv" />
+    <Content Include="Resources\Animation\door\object_010_1.csv" />
+    <Content Include="Resources\Animation\Enemy\effect_003.csv" />
+    <Content Include="Resources\Animation\Enemy\effect_003_0.csv" />
+    <Content Include="Resources\Animation\Enemy\effect_003_1.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_001.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_001_1.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_001_2.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_001_3.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_002.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_002_1.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_002_2.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_002_3.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_003.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_003_1.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_003_2.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_003_3.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_003_4.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_003_b.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_004.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_004_1.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_004_2.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_004_3.csv" />
+    <Content Include="Resources\Animation\Enemy\mon_004_b.csv" />
+    <Content Include="Resources\Animation\GameOver\GameOver.csv" />
+    <Content Include="Resources\Animation\GameOver\icon_006.csv" />
+    <Content Include="Resources\Animation\Logo\Logo.csv" />
+    <Content Include="Resources\Animation\Logo\logo_002.csv" />
+    <Content Include="Resources\Animation\Logo\logo_002_1.csv" />
+    <Content Include="Resources\Animation\Logo\logo_002_2.csv" />
+    <Content Include="Resources\Animation\Logo\logo_002_3.csv" />
+    <Content Include="Resources\Animation\ManaBall\CollisionEffect\effect_002.csv" />
+    <Content Include="Resources\Animation\ManaBall\CollisionEffect\effect_012.csv" />
+    <Content Include="Resources\Animation\ManaBall\CollisionEffect\ManaBallHit.csv" />
+    <Content Include="Resources\Animation\ManaBall\ManaBall\effect_009.csv" />
+    <Content Include="Resources\Animation\ManaBall\ManaBall\ManaBall.csv" />
+    <Content Include="Resources\Animation\ManaBall\ManaBall\ManaParticle.csv" />
+    <Content Include="Resources\Animation\ManaBall\ManaBall\object_003.csv" />
+    <Content Include="Resources\Animation\ManaBall\ManaBall\object_003_1.csv" />
+    <Content Include="Resources\Animation\ManaBall\ManaBall\object_003_2.csv" />
+    <Content Include="Resources\Animation\ManaBall\TrailEffect\effect_007_1.csv" />
+    <Content Include="Resources\Animation\ManaBall\TrailEffect\effect_007_2.csv" />
+    <Content Include="Resources\Animation\ManaBall\TrailEffect\effect_007_3.csv" />
+    <Content Include="Resources\Animation\ManaBall\TrailEffect\effect_007_4.csv" />
+    <Content Include="Resources\Animation\ManaBall\TrailEffect\ManaBallTrail.csv" />
+    <Content Include="Resources\Animation\Mummy\Attack.csv" />
+    <Content Include="Resources\Animation\Mummy\Attack.mot" />
+    <Content Include="Resources\Animation\Mummy\Death.csv" />
+    <Content Include="Resources\Animation\Mummy\Death.mot" />
+    <Content Include="Resources\Animation\Mummy\Hurt.csv" />
+    <Content Include="Resources\Animation\Mummy\Hurt.mot" />
+    <Content Include="Resources\Animation\Mummy\Idle.csv" />
+    <Content Include="Resources\Animation\Mummy\Idle.mot" />
+    <Content Include="Resources\Animation\Mummy\Mummy.csv" />
+    <Content Include="Resources\Animation\Mummy\Walk.csv" />
+    <Content Include="Resources\Animation\Mummy\Walk.mot" />
+    <Content Include="Resources\Animation\Object\Bomb\effect_003.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\effect_003_0.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\effect_003_1.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\effect_004.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\effect_004_0.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\effect_004_1.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\object_002.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\object_002_1.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\object_002_2.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\object_002_3.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\object_005.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\object_005_1.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\object_005_2.csv" />
+    <Content Include="Resources\Animation\Object\Bomb\object_005_3.csv" />
+    <Content Include="Resources\Animation\Object\Torch\object_011.csv" />
+    <Content Include="Resources\Animation\Object\Torch\Torch.csv" />
+    <Content Include="Resources\Animation\Player\Character.csv" />
+    <Content Include="Resources\Animation\Player\ch_001.csv" />
+    <Content Include="Resources\Animation\Player\ch_002.csv" />
+    <Content Include="Resources\Animation\Player\ch_003.csv" />
+    <Content Include="Resources\Animation\Player\ch_004.csv" />
+    <Content Include="Resources\Animation\Player\ch_005.csv" />
+    <Content Include="Resources\Animation\Player\ch_006.csv" />
+    <Content Include="Resources\Animation\Player\ch_007.csv" />
+    <Content Include="Resources\Animation\Player\ch_008.csv" />
+    <Content Include="Resources\Animation\Player\ch_009.csv" />
+    <Content Include="Resources\Animation\Player\ch_010.csv" />
+    <Content Include="Resources\Animation\Player\ch_011.csv" />
+    <Content Include="Resources\Animation\Player\ch_012.csv" />
+    <Content Include="Resources\Animation\Player\ch_013.csv" />
+    <Content Include="Resources\Animation\Player\effect_001.csv" />
+    <Content Include="Resources\Animation\Player\Player.csv" />
+    <Content Include="Resources\Animation\Player\PlayerSwing.csv" />
+    <Content Include="Resources\Animation\UI\Heart\Bounce.csv" />
+    <Content Include="Resources\Animation\UI\Heart\Heart.csv" />
+    <Content Include="Resources\icon_001.cur" />
+    <Content Include="Resources\manaball_icon.ico" />
+    <Content Include="Resources\Sounds\BGM_001.wav" />
+    <Content Include="Resources\Sounds\BGM_002_noroofing.wav" />
+    <Content Include="Resources\Sounds\BGM_002_roofing.wav" />
+    <Content Include="Resources\Sounds\BGM_003.mp3" />
+    <Content Include="Resources\Sounds\BGM_003.wav" />
+    <Content Include="Resources\Sounds\BGM_004.wav" />
+    <Content Include="Resources\Sounds\BGM_005.wav" />
+    <Content Include="Resources\Sounds\sfx_001_1.wav" />
+    <Content Include="Resources\Sounds\sfx_001_2.wav" />
+    <Content Include="Resources\Sounds\sfx_001_3.wav" />
+    <Content Include="Resources\Sounds\sfx_002.wav" />
+    <Content Include="Resources\Sounds\sfx_003.wav" />
+    <Content Include="Resources\Sounds\sfx_005.wav" />
+    <Content Include="Resources\Sounds\sfx_005_1.wav" />
+    <Content Include="Resources\Sounds\sfx_005_2.wav" />
+    <Content Include="Resources\Sounds\sfx_005_3.wav" />
+    <Content Include="Resources\Sounds\sfx_006.wav" />
+    <Content Include="Resources\Sounds\sfx_007_1.mp3" />
+    <Content Include="Resources\Sounds\sfx_007_1.wav" />
+    <Content Include="Resources\Sounds\sfx_007_2.wav" />
+    <Content Include="Resources\Sounds\sfx_007_3.wav" />
+    <Content Include="Resources\Sounds\sfx_008.wav" />
+    <Content Include="Resources\Sounds\sfx_009.wav" />
+    <Content Include="Resources\Sounds\sfx_011.wav" />
+    <Content Include="Resources\Sounds\sfx_012.wav" />
+    <Content Include="Resources\Sounds\sfx_013.wav" />
+    <Content Include="Resources\Sounds\sfx_014.wav" />
+    <Content Include="Resources\Sounds\sfx_015.wav" />
+    <Content Include="Resources\Sounds\sfx_017_1.wav" />
+    <Content Include="Resources\Sounds\sfx_017_2.wav" />
+    <Content Include="Resources\Sounds\sfx_018.wav" />
+    <Content Include="Resources\Sounds\sfx_019.wav" />
+    <Content Include="Resources\Sounds\sfx_020.wav" />
+    <Content Include="Resources\Sounds\sfx_021.wav" />
+    <Content Include="Resources\Sounds\sfx_023.wav" />
+    <Content Include="Resources\Sounds\sfx_024.wav" />
+    <Content Include="Resources\Sounds\sfx_026.wav" />
+    <Content Include="Resources\Sounds\sfx_027.wav" />
+    <Content Include="Resources\Sounds\sfx_028.wav" />
+    <Content Include="Resources\Sounds\sfx_029.mp3" />
+    <Content Include="Resources\Sounds\sfx_029_2.wav" />
+    <Content Include="Resources\Sounds\sfx_030.wav" />
+    <Content Include="Resources\Sounds\sfx_031.mp3" />
+    <Content Include="Resources\Sounds\sfx_033.wav" />
+    <Content Include="Resources\Sounds\sfx_034_1.wav" />
+    <Content Include="Resources\Sounds\sfx_034_2.wav" />
+    <Content Include="Resources\Sounds\sfx_035.wav" />
+    <Content Include="Resources\Sounds\sfx_036.wav" />
+    <Content Include="Resources\Sprites\Ball.png" />
+    <Content Include="Resources\Sprites\CutScene\EndingCredit.csv" />
+    <Content Include="Resources\Sprites\CutScene\scene_001.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_002.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_003.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_004.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_005.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_019.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_020.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_021.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_022.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_023.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_024.png" />
+    <Content Include="Resources\Sprites\CutScene\scene_025.csv" />
+    <Content Include="Resources\Sprites\CutScene\scene_025.png" />
+    <Content Include="Resources\Sprites\door\doorback.png" />
+    <Content Include="Resources\Sprites\door\icon_005.png" />
+    <Content Include="Resources\Sprites\door\object_004.png" />
+    <Content Include="Resources\Sprites\door\object_010.png" />
+    <Content Include="Resources\Sprites\door\object_010_1.png" />
+    <Content Include="Resources\Sprites\Enemy\effect_003.png" />
+    <Content Include="Resources\Sprites\Enemy\mon_001.png" />
+    <Content Include="Resources\Sprites\Enemy\mon_002.png" />
+    <Content Include="Resources\Sprites\Enemy\mon_003.png" />
+    <Content Include="Resources\Sprites\Enemy\mon_003_4.png" />
+    <Content Include="Resources\Sprites\Enemy\mon_004.png" />
+    <Content Include="Resources\Sprites\Enemy\mon_004_1.png" />
+    <Content Include="Resources\Sprites\Illust\illust_002.png" />
+    <Content Include="Resources\Sprites\Illust\illust_002_1.png" />
+    <Content Include="Resources\Sprites\Illust\illust_003.png" />
+    <Content Include="Resources\Sprites\Illust\illust_003_1.png" />
+    <Content Include="Resources\Sprites\Illust\illust_004.png" />
+    <Content Include="Resources\Sprites\Illust\illust_004_1.png" />
+    <Content Include="Resources\Sprites\Illust\mon_005_3_1.png" />
+    <Content Include="Resources\Sprites\lightmask.png" />
+    <Content Include="Resources\Sprites\Logo\logo_001.png" />
+    <Content Include="Resources\Sprites\Logo\logo_002.png" />
+    <Content Include="Resources\Sprites\ManaBall\CollisionEffect\effect_002.png" />
+    <Content Include="Resources\Sprites\ManaBall\CollisionEffect\effect_002_012.png" />
+    <Content Include="Resources\Sprites\ManaBall\CollisionEffect\effect_012.png" />
+    <Content Include="Resources\Sprites\ManaBall\ManaBall\1.png" />
+    <Content Include="Resources\Sprites\ManaBall\ManaBall\effect_009.png" />
+    <Content Include="Resources\Sprites\ManaBall\ManaBall\object_003.png" />
+    <Content Include="Resources\Sprites\ManaBall\TrailEffect\effect_007.png" />
+    <Content Include="Resources\Sprites\Map\0.png" />
+    <Content Include="Resources\Sprites\Map\map_001.png" />
+    <Content Include="Resources\Sprites\Map\map_001_01.png" />
+    <Content Include="Resources\Sprites\Map\map_003.png" />
+    <Content Include="Resources\Sprites\Object\Ball.png" />
+    <Content Include="Resources\Sprites\Object\Bomb\effect_003_1.png" />
+    <Content Include="Resources\Sprites\Object\Bomb\effect_004_1.png" />
+    <Content Include="Resources\Sprites\Object\Bomb\object_002.png" />
+    <Content Include="Resources\Sprites\Object\Bomb\object_005.png" />
+    <Content Include="Resources\Sprites\Object\ch_001.png" />
+    <Content Include="Resources\Sprites\Object\mon_001.png" />
+    <Content Include="Resources\Sprites\Object\mon_002.png" />
+    <Content Include="Resources\Sprites\Object\mon_003.png" />
+    <Content Include="Resources\Sprites\Object\mon_004.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_1.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_2.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_2_1.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_2_2.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_3.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_3_1.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_3_2.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_4.png" />
+    <Content Include="Resources\Sprites\Object\Pilar\object_006_5.png" />
+    <Content Include="Resources\Sprites\Object\Player.png" />
+    <Content Include="Resources\Sprites\Object\Torch\object_011.png" />
+    <Content Include="Resources\Sprites\Object\Torch\object_012.png" />
+    <Content Include="Resources\Sprites\Player.png" />
+    <Content Include="Resources\Sprites\Player\ch_001.png" />
+    <Content Include="Resources\Sprites\Player\ch_0011.png" />
+    <Content Include="Resources\Sprites\Player\effect_001.png" />
+    <Content Include="Resources\Sprites\UI\HealthBar.png" />
+    <Content Include="Resources\Sprites\UI\Heart.png" />
+    <Content Include="Resources\Sprites\UI\icon_008.png" />
+    <Content Include="Resources\Sprites\UI\icon_011.png" />
+    <Content Include="Resources\Sprites\UI\UI_002.png" />
+    <Content Include="Resources\Sprites\UI\UI_003.png" />
+    <Content Include="Resources\Sprites\UI\UI_004.png" />
+    <Content Include="Resources\Sprites\UI\UI_004_1.png" />
+    <Content Include="Resources\Sprites\UI\UI_005.png" />
+    <Content Include="Resources\Sprites\UI\UI_006.png" />
+    <Content Include="Resources\Sprites\UI\UI_006_1.png" />
+    <Content Include="Resources\Sprites\UI\UI_008.png" />
+    <Content Include="Resources\Sprites\UI\UI_008_1.png" />
+    <Content Include="Resources\Sprites\UI\UI_008_2.png" />
+    <Content Include="Resources\Sprites\UI\UI_009.png" />
+    <Content Include="Resources\Sprites\UI\UI_010.png" />
+    <Content Include="Resources\Sprites\UI\UI_011.png" />
+    <Content Include="Resources\Sprites\UI\UI_012.png" />
+    <Content Include="Resources\Sprites\UI\UI_013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

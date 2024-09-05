@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0CC75332-8F98-4367-960D-A8061003E79F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>.\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>.\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AdditionalFeatures\Colored\Colored.cpp" />
+    <ClCompile Include="Camera\Camera.cpp" />
+    <ClCompile Include="Canvas\Canvas.cpp" />
+    <ClCompile Include="Collisionable\Collisionable.cpp" />
+    <ClCompile Include="Components\AlphaBitmap\AlphaBitmapComponent.cpp" />
+    <ClCompile Include="Components\Animation\AnimationComponent.cpp" />
+    <ClCompile Include="Components\Base\ComponentBase.cpp" />
+    <ClCompile Include="Components\Bitmap\BitmapComponent.cpp" />
+    <ClCompile Include="Components\Bound\BoundComponent.cpp" />
+    <ClCompile Include="Components\Camera\CameraComponent.cpp" />
+    <ClCompile Include="Components\Circle\CircleComponent.cpp" />
+    <ClCompile Include="Components\Colliders\Base\ColliderBase.cpp" />
+    <ClCompile Include="Components\Colliders\Box\BoxCollider.cpp" />
+    <ClCompile Include="Components\Colliders\Circle\CircleCollider.cpp" />
+    <ClCompile Include="Components\Colliders\RoundRect\RoundRectCollider.cpp" />
+    <ClCompile Include="Components\FadeBitmap\FadeBitmapComponent.cpp" />
+    <ClCompile Include="Components\HidableAnimation\HidableAnimation.cpp" />
+    <ClCompile Include="Components\Lights\Light\LightComponent.cpp" />
+    <ClCompile Include="Components\Lights\Shade\ShadeComponent.cpp" />
+    <ClCompile Include="Components\Movement\MovementComponent.cpp" />
+    <ClCompile Include="Components\Rect\RectComponent.cpp" />
+    <ClCompile Include="Components\Rigidbody\RigidbodyComponent.cpp" />
+    <ClCompile Include="Components\RoundRect\RoundRectComponent.cpp" />
+    <ClCompile Include="Components\Shapes\Box\BoxShapeComponent.cpp" />
+    <ClCompile Include="Components\Shapes\Box\StrokeBoxShapeComponent.cpp" />
+    <ClCompile Include="Components\Shapes\Circle\CircleShapeComponent.cpp" />
+    <ClCompile Include="Components\Shapes\Circle\StrokeCircleShapeComponent.cpp" />
+    <ClCompile Include="Components\Shapes\RoundRect\RoundRectShapeComponent.cpp" />
+    <ClCompile Include="Components\Shapes\Stroked\Stroked.cpp" />
+    <ClCompile Include="Components\UI\UIComponent.cpp" />
+    <ClCompile Include="Manager\Audio\AudioManager.cpp" />
+    <ClCompile Include="Manager\Camera\CameraManager.cpp" />
+    <ClCompile Include="Manager\Input\InputManager.cpp" />
+    <ClCompile Include="Manager\Observer\ObserverManager.cpp" />
+    <ClCompile Include="Manager\Render\RenderManager.cpp" />
+    <ClCompile Include="Manager\Resource\ResourceManager.cpp" />
+    <ClCompile Include="Manager\System\SystemManager.cpp" />
+    <ClCompile Include="Manager\Time\TimeManager.cpp" />
+    <ClCompile Include="Manager\Window\WindowManager.cpp" />
+    <ClCompile Include="Math\Circle\Circle.cpp" />
+    <ClCompile Include="Math\Collisions\AABB\AABB.cpp" />
+    <ClCompile Include="Math\Collisions\Collision\Collision.cpp" />
+    <ClCompile Include="Math\Helper\Helper.cpp" />
+    <ClCompile Include="Math\Line\Line.cpp" />
+    <ClCompile Include="Math\Polygon\Polygon.cpp" />
+    <ClCompile Include="Math\Rect\Rect.cpp" />
+    <ClCompile Include="Math\RoundRect\RoundRect.cpp" />
+    <ClCompile Include="Math\Vector\Vector2.cpp" />
+    <ClCompile Include="Objects\Base\ObjectBase.cpp" />
+    <ClCompile Include="Objects\Camera\CameraObject.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="System\System.cpp" />
+    <ClCompile Include="Tag\Tag.cpp" />
+    <ClCompile Include="UserInterfaces\Base\UIBase.cpp" />
+    <ClCompile Include="UserInterfaces\Elements\SlideButton\SlideButton.cpp" />
+    <ClCompile Include="UserInterfaces\Panels\Anchor\AnchorPanel.cpp" />
+    <ClCompile Include="UserInterfaces\Panels\Overlay\OverlayPanel.cpp" />
+    <ClCompile Include="UserInterfaces\Panels\Stack\StackPanel.cpp" />
+    <ClCompile Include="UserInterfaces\Wrappers\Animation\AnimationWrapper.cpp" />
+    <ClCompile Include="UserInterfaces\Wrappers\Base\WrapperBase.cpp" />
+    <ClCompile Include="UserInterfaces\Wrappers\Box\BoxWrapper.cpp" />
+    <ClCompile Include="UserInterfaces\Wrappers\Button\ButtonWrapper.cpp" />
+    <ClCompile Include="UserInterfaces\Wrappers\FadeImage\FadeImageWrapper.cpp" />
+    <ClCompile Include="UserInterfaces\Wrappers\Hidable\HidableWrapper.cpp" />
+    <ClCompile Include="UserInterfaces\Wrappers\Image\ImageWrapper.cpp" />
+    <ClCompile Include="World\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdditionalFeatures\AdditionalFeatures.h" />
+    <ClInclude Include="AdditionalFeatures\Colored\Colored.h" />
+    <ClInclude Include="Camera\Camera.h" />
+    <ClInclude Include="Canvas\Canvas.h" />
+    <ClInclude Include="Collisionable\Collisionable.h" />
+    <ClInclude Include="Components\AlphaBitmap\AlphaBitmapComponent.h" />
+    <ClInclude Include="Components\Animation\AnimationComponent.h" />
+    <ClInclude Include="Components\Base\ComponentBase.h" />
+    <ClInclude Include="Components\Bitmap\BitmapComponent.h" />
+    <ClInclude Include="Components\Bound\BoundComponent.h" />
+    <ClInclude Include="Components\Camera\CameraComponent.h" />
+    <ClInclude Include="Components\Circle\CircleComponent.h" />
+    <ClInclude Include="Components\Colliders\Base\ColliderBase.h" />
+    <ClInclude Include="Components\Colliders\Box\BoxCollider.h" />
+    <ClInclude Include="Components\Colliders\Circle\CircleCollider.h" />
+    <ClInclude Include="Components\Colliders\Colliders.h" />
+    <ClInclude Include="Components\Colliders\RoundRect\RoundRectCollider.h" />
+    <ClInclude Include="Components\Components.h" />
+    <ClInclude Include="Components\FadeBitmap\FadeBitmapComponent.h" />
+    <ClInclude Include="Components\HidableAnimation\HidableAnimation.h" />
+    <ClInclude Include="Components\Lights\Lights.h" />
+    <ClInclude Include="Components\Lights\Light\LightComponent.h" />
+    <ClInclude Include="Components\Lights\Shade\ShadeComponent.h" />
+    <ClInclude Include="Components\Movement\MovementComponent.h" />
+    <ClInclude Include="Components\Rect\RectComponent.h" />
+    <ClInclude Include="Components\Rigidbody\RigidbodyComponent.h" />
+    <ClInclude Include="Components\RoundRect\RoundRectComponent.h" />
+    <ClInclude Include="Components\Shapes\Box\BoxShapeComponent.h" />
+    <ClInclude Include="Components\Shapes\Box\StrokeBoxShapeComponent.h" />
+    <ClInclude Include="Components\Shapes\Circle\CircleShapeComponent.h" />
+    <ClInclude Include="Components\Shapes\Circle\StrokeCircleShapeComponent.h" />
+    <ClInclude Include="Components\Shapes\RoundRect\RoundRectShapeComponent.h" />
+    <ClInclude Include="Components\Shapes\Shapes.h" />
+    <ClInclude Include="Components\Shapes\Stroked\Stroked.h" />
+    <ClInclude Include="Components\UI\UIComponent.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Manager\Audio\AudioManager.h" />
+    <ClInclude Include="Manager\Base\ManagerBase.hpp" />
+    <ClInclude Include="Manager\Camera\CameraManager.h" />
+    <ClInclude Include="Manager\Input\InputManager.h" />
+    <ClInclude Include="Manager\Manager.h" />
+    <ClInclude Include="Manager\Observer\ObserverManager.h" />
+    <ClInclude Include="Manager\Render\RenderManager.h" />
+    <ClInclude Include="Manager\Resource\ResourceManager.h" />
+    <ClInclude Include="Manager\System\SystemManager.h" />
+    <ClInclude Include="Manager\Time\TimeManager.h" />
+    <ClInclude Include="Manager\Window\WindowManager.h" />
+    <ClInclude Include="Math\Circle\Circle.h" />
+    <ClInclude Include="Math\Collisions\AABB\AABB.h" />
+    <ClInclude Include="Math\Collisions\Collisions.h" />
+    <ClInclude Include="Math\Collisions\Collision\Collision.h" />
+    <ClInclude Include="Math\Helper\Helper.h" />
+    <ClInclude Include="Math\Line\Line.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Polygon\Polygon.h" />
+    <ClInclude Include="Math\Rect\Rect.h" />
+    <ClInclude Include="Math\RoundRect\RoundRect.h" />
+    <ClInclude Include="Math\Vector\Vector2.h" />
+    <ClInclude Include="Objects\Base\ObjectBase.h" />
+    <ClInclude Include="Objects\Camera\CameraObject.h" />
+    <ClInclude Include="Objects\Objects.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="System\System.h" />
+    <ClInclude Include="Tag\Tag.h" />
+    <ClInclude Include="UserInterfaces\Base\UIBase.h" />
+    <ClInclude Include="UserInterfaces\Elements\Elements.h" />
+    <ClInclude Include="UserInterfaces\Elements\SlideButton\SlideButton.h" />
+    <ClInclude Include="UserInterfaces\Panels\Anchor\AnchorPanel.h" />
+    <ClInclude Include="UserInterfaces\Panels\Overlay\OverlayPanel.h" />
+    <ClInclude Include="UserInterfaces\Panels\Panels.h" />
+    <ClInclude Include="UserInterfaces\Panels\Stack\StackPanel.h" />
+    <ClInclude Include="UserInterfaces\UserInterfaces.h" />
+    <ClInclude Include="UserInterfaces\Wrappers\Animation\AnimationWrapper.h" />
+    <ClInclude Include="UserInterfaces\Wrappers\Base\WrapperBase.h" />
+    <ClInclude Include="UserInterfaces\Wrappers\Box\BoxWrapper.h" />
+    <ClInclude Include="UserInterfaces\Wrappers\Button\ButtonWrapper.h" />
+    <ClInclude Include="UserInterfaces\Wrappers\FadeImage\FadeImageWrapper.h" />
+    <ClInclude Include="UserInterfaces\Wrappers\Hidable\HidableWrapper.h" />
+    <ClInclude Include="UserInterfaces\Wrappers\Image\ImageWrapper.h" />
+    <ClInclude Include="UserInterfaces\Wrappers\Wrappers.h" />
+    <ClInclude Include="World\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Animation\Animation.vcxproj">
+      <Project>{9613b5f9-b96f-430b-9f03-54ef69d779df}</Project>
+      <Name>Animation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Audio\Audio.vcxproj">
+      <Project>{fd8126b5-1fcb-44cc-aa19-6f52626150b6}</Project>
+      <Name>Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DosuhaPointer\DosuhaPointer.vcxproj">
+      <Project>{11525125-e08e-4f20-82c5-29aeb69b2516}</Project>
+      <Name>DosuhaPointer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exception\Exception.vcxproj">
+      <Project>{ed3546a8-a8ae-45da-9622-d2bcb3ac2487}</Project>
+      <Name>Exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Input\Input.vcxproj">
+      <Project>{2500ebc8-6247-451a-afc8-76513debd7df}</Project>
+      <Name>Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Render\Render.vcxproj">
+      <Project>{8799087d-7e9b-47ab-8365-762e005ba421}</Project>
+      <Name>Render</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Time\Time.vcxproj">
+      <Project>{1884cf54-1124-4681-840d-83a472b0130d}</Project>
+      <Name>Time</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Window\Window.vcxproj">
+      <Project>{2058c754-32d6-492d-852a-32310a2fbde7}</Project>
+      <Name>Window</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserInterfaces\Panels\Flex\" />
+    <Folder Include="UserInterfaces\Panels\Grid\" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

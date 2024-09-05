@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Exception\ResultException\ResultException.cpp" />
+    <ClCompile Include="Interfaces\ILoader\ILoader.cpp" />
+    <ClCompile Include="Interfaces\IRenderer\IRenderer.cpp" />
+    <ClCompile Include="Interfaces\IShader\IShader.cpp" />
+    <ClCompile Include="Interfaces\ISystem\ISystem.cpp" />
+    <ClCompile Include="Loader\Loader.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Loader\Renderer\Renderer.cpp" />
+    <ClCompile Include="Shader\Shader.cpp" />
+    <ClCompile Include="System\System.cpp" />
+    <ClCompile Include="Utilities\Functions\Functions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Exception\ResultException\ResultException.h" />
+    <ClInclude Include="Exception\Exception.h" />
+    <ClInclude Include="Interfaces\ILoader\ILoader.h" />
+    <ClInclude Include="Interfaces\Interfaces.h" />
+    <ClInclude Include="Interfaces\IRenderer\IRenderer.h" />
+    <ClInclude Include="Interfaces\IShader\IShader.h" />
+    <ClInclude Include="Interfaces\ISystem\ISystem.h" />
+    <ClInclude Include="Loader\Loader.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="Loader\Renderer\Renderer.h" />
+    <ClInclude Include="Shader\Shader.h" />
+    <ClInclude Include="System\System.h" />
+    <ClInclude Include="Utilities\Functions\Functions.h" />
+    <ClInclude Include="Utilities\Utilities.h" />
+  </ItemGroup>
+</Project>

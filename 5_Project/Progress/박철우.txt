@@ -1,0 +1,71 @@
+8/5
+과제 1. 길찾기 알고리즘
+과제 2. 레벨 에디터 
+
+길찾기 알고리즘 (astar 알고리즘) 구현 -> 콘솔에서 테스트 완료
+엔진구현되면 레벨 에디터와 함께 테스트 해봐야함
+
+LevelEditor UI 기획이 보기 편하게 다듬어야함
+GameMapGenerator 작동 방식 편리하게
+
+
+8/6
+과제 1. 카메라 렉 구현
+과제 2. 선형보간이용한 여러 곡선 구현 
+
+카메라 자연스러운 움직임 (카메라 렉) 구현 -> 간단한 움직임은 테스트 완료
+easing 함수 참고 -> 여러 가지 곡선 구현 -> 테스트 필요
+
+기획이 계속 수정되면서 LevelEditor가 필요없거나 아니면 아주 정교하고 잘 만들어진 LevelEditor를 구현하거나 해야함
+후자를 목표로 하고 싶지만 시간이 많이 필요할 듯
+
+
+8/7
+과제 1. 곡선 움직임 테스트
+과제 2. 
+
+일정 조율이 필요
+기획과의 커뮤니케이션에 좀 더 힘을 쓸 필요가 있다
+현재의 진행상황에 대해 전달하는것 뿐 아니라 앞으로의 일정에 대해서도 전달 필요
+전달하는 과정에서 서로가 이해한 내용의 차이가 최대한 적어야 함
+서로가 이해하고있는 용어의 의미의 차이 예를들어 "완성"이 되었다라는 것의 기준이 서로 다름
+
+
+8/8
+엔진 사용법 익히기
+
+
+8/9
+과제 1. 간단한 rigidbody 구현
+과제 2. 클라이언트 작업
+
+rigidbody (중력기능) 구현
+epslion 값 필요
+로직이 조금 편리하지가 않다
+
+
+8/12
+
+
+* 엔진 사용법
+모듈화
+System : Core 역할
+ISystem : Interface
+Manager : 모듈들의 각 기능들을 상속
+Utilities -> Function : CreateSystem
+
+
+* C++문법 관련 공부한 내용
+(@ : 추가 공부 필요)
+
+- SingleTonBase
+	call_once
+	once_flag
+- protected, private 생성자
+	상속을 받는경우
+	SingleTon같은 디자인을 사용하는 경우
+- shared_ptr<>
+- enable_shared_from_this<>  (weak_from_this())
+- weak_ptr<>
+- IUnknown @
+- noexcept, const, throw()
